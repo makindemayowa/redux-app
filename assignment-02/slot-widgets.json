@@ -1,0 +1,22 @@
+{
+  "slot-widgets": [
+    {
+      "bigTitle": "Spain-1",
+      "smallTitle": "Sandy beaches and delicious food",
+      "image": "europe-spain-mallorca-cala-gat-beach",
+      "fareId": "1"
+    },
+    {
+      "bigTitle": "Spain-2",
+      "smallTitle": "Sandy beaches and delicious food",
+      "image": "europe-spain-mallorca-cala-gat-beach",
+      "fareId": "2"
+    },
+    {
+      "bigTitle": "Spain-3",
+      "smallTitle": "Sandy beaches and delicious food",
+      "image": "europe-spain-mallorca-cala-gat-beach",
+      "fareId": "3"
+    }
+  ]
+}
