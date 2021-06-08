@@ -2,7 +2,7 @@
 
 1. What are the tools that are essential in developing FE applications with high quality?
 
-1. What are the different types of rendering pages and what is the use-case/pros and cons for each one?
+1. What are the different types of rendering pages and what are the use-case/pros and cons for each one?
 
 1. How can we ensure that FE is working fine in production?
 
