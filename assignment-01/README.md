@@ -20,6 +20,7 @@ Your mission is to develop the front-end from scratch using react framework. We 
 
 ## Bonus
 
+* Typescript
 * Integration/E2E tests
 * Automated deployment
 * Storybook
