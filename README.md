@@ -1,4 +1,4 @@
-# Travix Front-End Tech Assignnment
+# Travix Front-End Tech Assignment
 
 This assignment consists of 2 parts:
 1. Answering 2 questions from the provided list ([Questions](https://github.com/Travix-International/fe-tech-test/blob/master/questions/README.md))
