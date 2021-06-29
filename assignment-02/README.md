@@ -30,6 +30,7 @@ each row should have 3 widgets for desktop, 2 for smaller devices and then 1 ite
 ## Bonus
 
 * Typescript
+* CSS-in-JS
 * Integration/E2E tests
 * Automated deployment
 * Storybook
