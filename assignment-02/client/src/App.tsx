@@ -11,7 +11,7 @@ function App() {
   const slotWidgets: readonly ISlotWidget[] = useSelector(
     (state: IApplicationState) => state.widgets.slotWidgets,
     shallowEqual
-  )
+  );
 
   const loadWidgets = React.useCallback(
     () => dispatch(getWidgets()),
@@ -26,7 +26,7 @@ function App() {
     <div className="pt-4 px-3">
       <Row>
           {
-            slotWidgets.map((slotWidget) =>
+            slotWidgets.map(slotWidget =>
               <Col sm="12" md="6" lg="4" className="mb-4" key={slotWidget.fareId}>
                 <SlotCard slotWidget={slotWidget}/>
               </Col>
@@ -35,6 +35,6 @@ function App() {
       </Row>
     </div>
   );
-}
+};
 
 export default App;

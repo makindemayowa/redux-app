@@ -24,9 +24,9 @@ function SlotCard({ slotWidget }: { slotWidget: ISlotWidget }) {
     }, [loadFare]);
 
   return (
-    <Container className="slot-card">
+    <Container className="slot-card" data-testid="slot-card">
       <Card>
-        <div className="card-image" style={{backgroundImage: `url(${slotWidget.image})`}}>
+        <div className="card-image" data-testid="card-image" style={{backgroundImage: `url(${slotWidget.image})`}}>
             <div className="card-image-overlay" />
             <div className="card-image-overlay-content d-flex column align-items-center">
                 <div>
@@ -78,7 +78,7 @@ function SlotCard({ slotWidget }: { slotWidget: ISlotWidget }) {
                     }
                     {
                         fare.destination.airportName &&
-                        <span className="bold-text-light">,&nbsp;{fare.destination.airportName}</span>
+                        <span className="bold-text-light" data-testid="destination-airport-name">,&nbsp;{fare.destination.airportName}</span>
                     }
                     <span className="bold-text-light">&nbsp; • {moment(fare.returnDate).format("MMM DD")}</span>
                 </p>
