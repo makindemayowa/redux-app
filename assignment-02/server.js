@@ -1,8 +1,11 @@
 'use strict';
 
+const cors = require('cors');
 const app = require('express')();
 const slotWidgets = require('./slot-widgets.json');
 const fares = require('./fares.json');
+
+app.use(cors());
 
 /**
  * GET /slot-widgets
