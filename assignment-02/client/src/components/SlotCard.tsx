@@ -3,9 +3,8 @@ import { Container, Card, CardBody } from 'reactstrap';
 import moment from 'moment';
 import { Dispatch } from "redux"
 import { useSelector, shallowEqual, useDispatch } from "react-redux"
-import planeRight from '../assets/aeroplane-right.png';
-import planeLeft from '../assets/aeroplane-left.png';
-import { getFare } from '../store/actionCreators';
+import planeRight from '../assets/plane-right.svg';
+import getFare from '../actions/getFare';
 import './slotcard.scss';
 
 function SlotCard({ slotWidget }: { slotWidget: ISlotWidget }) {
@@ -46,7 +45,7 @@ function SlotCard({ slotWidget }: { slotWidget: ISlotWidget }) {
                         <span className="price-currency">€</span><span className="price">{fare.price}</span><sup className="price-subscript">*</sup> 
                     </span>
                     <br/>
-                    <hr className="yellow-underline" />
+                    <div className="yellow-underline" />
                 </div>
             </div>
         </div>
@@ -64,12 +63,12 @@ function SlotCard({ slotWidget }: { slotWidget: ISlotWidget }) {
                         fare.departure.airportName &&
                         <span className="bold-text-dark">,&nbsp;{fare.departure.airportName}</span>
                     }
-                    <span className="bold-text-light">&nbsp; • {moment(fare.departureDate).format("MMM DD")}</span>
+                    <span className="bold-text-light">&nbsp; • {moment(fare.departureDate).format("MMM DD.")}</span>
                 </p>
             </div>
             <div className="d-flex align-items-center mb-1">
                 <div className="plane-icon-container">
-                    <img className="aeroplane-icon" src={planeLeft} alt="" />
+                    <img className="aeroplane-icon aeroplane-icon-left" src={planeRight} alt="" />
                 </div>
                 <p className="mt-0 mb-0">
                     {
@@ -80,7 +79,7 @@ function SlotCard({ slotWidget }: { slotWidget: ISlotWidget }) {
                         fare.destination.airportName &&
                         <span className="bold-text-light" data-testid="destination-airport-name">,&nbsp;{fare.destination.airportName}</span>
                     }
-                    <span className="bold-text-light">&nbsp; • {moment(fare.returnDate).format("MMM DD")}</span>
+                    <span className="bold-text-light">&nbsp; • {moment(fare.returnDate).format("MMM DD.")}</span>
                 </p>
             </div>
             <div className="d-flex align-items-center mb-1">

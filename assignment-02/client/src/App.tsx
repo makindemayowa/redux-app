@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'reactstrap';
 import { Dispatch } from "redux"
 import { useSelector, shallowEqual, useDispatch } from "react-redux"
-import { getWidgets } from "./store/actionCreators"
+import getWidgets from "./actions/getWidgets"
 import SlotCard from './components/SlotCard'
 import './app.scss';
 
