@@ -1,6 +1,7 @@
 'use strict';
 
 const cors = require('cors');
+const express = require('express');
 const app = require('express')();
 const slotWidgets = require('./slot-widgets.json');
 const fares = require('./fares.json');
@@ -49,6 +50,7 @@ app.get('/fares/:id', (req, res) => {
   }
 });
 
+app.use(express.static(__dirname + '/client/build'));
 
 app.listen(9001, () => {
   process.stdout.write('The server is available on http://localhost:9001/\n');
