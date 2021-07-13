@@ -5,10 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm start --prefix client",
-    "build:client": "npm run build --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "npm run build:client && node server.js"
+    "client": "yarn start --prefix client",
+    "build:client": "yarn run build --prefix client",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "start": "yarn run build:client && node server.js"
   },
   "keywords": [
     "travix"
